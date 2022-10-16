@@ -1,0 +1,108 @@
+[
+{
+    "model": "todo.taskcategory",
+    "pk": 1,
+    "fields": {
+        "name": "Professional",
+        "description": ""
+    }
+},
+{
+    "model": "todo.taskcategory",
+    "pk": 2,
+    "fields": {
+        "name": "Personal",
+        "description": ""
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "name": "Deploy Django",
+        "description": "",
+        "is_completed": false,
+        "created_at": "2022-10-13T12:58:03.001Z",
+        "updated_at": "2022-10-13T12:58:03.001Z",
+        "categories": [
+            1
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 2,
+    "fields": {
+        "user": 5,
+        "name": "Workout",
+        "description": "",
+        "is_completed": false,
+        "created_at": "2022-10-13T12:58:11.941Z",
+        "updated_at": "2022-10-13T12:58:11.941Z",
+        "categories": [
+            2
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 3,
+    "fields": {
+        "user": 2,
+        "name": "Read a cool book",
+        "description": "",
+        "is_completed": false,
+        "created_at": "2022-10-13T12:58:19.872Z",
+        "updated_at": "2022-10-13T12:58:19.872Z",
+        "categories": [
+            2
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "name": "Go for a walk in the evening",
+        "description": "",
+        "is_completed": false,
+        "created_at": "2022-10-13T12:58:27.735Z",
+        "updated_at": "2022-10-13T12:58:27.735Z",
+        "categories": [
+            2
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 5,
+    "fields": {
+        "user": 4,
+        "name": "Learn Spanish",
+        "description": "",
+        "is_completed": false,
+        "created_at": "2022-10-13T12:58:46.362Z",
+        "updated_at": "2022-10-13T12:58:46.362Z",
+        "categories": [
+            1
+        ]
+    }
+},
+{
+    "model": "todo.task",
+    "pk": 6,
+    "fields": {
+        "user": 4,
+        "name": "Attend the business meeting",
+        "description": "",
+        "is_completed": false,
+        "created_at": "2022-10-13T12:59:08.819Z",
+        "updated_at": "2022-10-13T12:59:08.819Z",
+        "categories": [
+            1
+        ]
+    }
+}
+]
