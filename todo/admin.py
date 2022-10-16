@@ -1,12 +1,16 @@
 from django.contrib import admin
-from django.contrib.admin import ModelAdmin
 
-from todo.models import Task, TaskCategory
-
-
-class TaskAdmin(ModelAdmin):
-    list_display = ('name', 'user', 'created_at', 'updated_at')
+from todo.models import UserTask, GroupTask, TaskCategory
 
 
-admin.site.register(Task, TaskAdmin)
+class UserTaskAdmin(admin.ModelAdmin):
+    list_display = ('name', 'user', 'is_completed', 'created_at', 'updated_at')
+
+
+class GroupTaskAdmin(admin.ModelAdmin):
+    list_display = ('name', 'created_at', 'is_completed', 'updated_at')
+
+
+admin.site.register(UserTask, UserTaskAdmin)
+admin.site.register(GroupTask, GroupTaskAdmin)
 admin.site.register(TaskCategory)

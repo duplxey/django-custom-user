@@ -3,7 +3,7 @@
     "model": "todo.taskcategory",
     "pk": 1,
     "fields": {
-        "name": "Professional",
+        "name": "Backend",
         "description": ""
     }
 },
@@ -11,97 +11,185 @@
     "model": "todo.taskcategory",
     "pk": 2,
     "fields": {
-        "name": "Personal",
+        "name": "Frontend",
         "description": ""
     }
 },
 {
-    "model": "todo.task",
-    "pk": 1,
-    "fields": {
-        "user": 1,
-        "name": "Deploy Django",
-        "description": "",
-        "is_completed": false,
-        "created_at": "2022-10-13T12:58:03.001Z",
-        "updated_at": "2022-10-13T12:58:03.001Z",
-        "categories": [
-            1
-        ]
-    }
-},
-{
-    "model": "todo.task",
-    "pk": 2,
-    "fields": {
-        "user": 5,
-        "name": "Workout",
-        "description": "",
-        "is_completed": false,
-        "created_at": "2022-10-13T12:58:11.941Z",
-        "updated_at": "2022-10-13T12:58:11.941Z",
-        "categories": [
-            2
-        ]
-    }
-},
-{
-    "model": "todo.task",
+    "model": "todo.taskcategory",
     "pk": 3,
     "fields": {
-        "user": 2,
-        "name": "Read a cool book",
-        "description": "",
-        "is_completed": false,
-        "created_at": "2022-10-13T12:58:19.872Z",
-        "updated_at": "2022-10-13T12:58:19.872Z",
-        "categories": [
-            2
-        ]
+        "name": "Design",
+        "description": ""
     }
 },
 {
-    "model": "todo.task",
+    "model": "todo.taskcategory",
     "pk": 4,
     "fields": {
-        "user": 1,
-        "name": "Go for a walk in the evening",
+        "name": "Marketing",
+        "description": ""
+    }
+},
+{
+    "model": "todo.usertask",
+    "pk": 1,
+    "fields": {
+        "name": "Redeploy the Django site",
         "description": "",
         "is_completed": false,
-        "created_at": "2022-10-13T12:58:27.735Z",
-        "updated_at": "2022-10-13T12:58:27.735Z",
+        "created_at": "2022-10-16T13:58:05.902Z",
+        "updated_at": "2022-10-16T13:58:05.902Z",
+        "user": 1,
+        "categories": [
+            1
+        ]
+    }
+},
+{
+    "model": "todo.usertask",
+    "pk": 2,
+    "fields": {
+        "name": "Fix the /users/ API endpoint",
+        "description": "",
+        "is_completed": false,
+        "created_at": "2022-10-16T13:58:22.054Z",
+        "updated_at": "2022-10-16T13:58:22.054Z",
+        "user": 2,
+        "categories": [
+            1
+        ]
+    }
+},
+{
+    "model": "todo.usertask",
+    "pk": 3,
+    "fields": {
+        "name": "Redesign the index page",
+        "description": "",
+        "is_completed": false,
+        "created_at": "2022-10-16T13:59:27.054Z",
+        "updated_at": "2022-10-16T13:59:27.054Z",
+        "user": 3,
+        "categories": [
+            3
+        ]
+    }
+},
+{
+    "model": "todo.usertask",
+    "pk": 4,
+    "fields": {
+        "name": "Setup Ubuntu 20.04",
+        "description": "",
+        "is_completed": false,
+        "created_at": "2022-10-16T13:59:39.145Z",
+        "updated_at": "2022-10-16T13:59:39.145Z",
+        "user": 1,
+        "categories": [
+            1
+        ]
+    }
+},
+{
+    "model": "todo.usertask",
+    "pk": 5,
+    "fields": {
+        "name": "Connect Stripe to the backend",
+        "description": "",
+        "is_completed": false,
+        "created_at": "2022-10-16T13:59:51.381Z",
+        "updated_at": "2022-10-16T13:59:51.381Z",
+        "user": 2,
+        "categories": [
+            1
+        ]
+    }
+},
+{
+    "model": "todo.usertask",
+    "pk": 6,
+    "fields": {
+        "name": "Improve user dashboard",
+        "description": "",
+        "is_completed": false,
+        "created_at": "2022-10-16T14:00:01.113Z",
+        "updated_at": "2022-10-16T14:00:01.113Z",
+        "user": 5,
         "categories": [
             2
         ]
     }
 },
 {
-    "model": "todo.task",
-    "pk": 5,
+    "model": "todo.usertask",
+    "pk": 7,
     "fields": {
-        "user": 4,
-        "name": "Learn Spanish",
+        "name": "Connect the frontend service with the backend service",
         "description": "",
         "is_completed": false,
-        "created_at": "2022-10-13T12:58:46.362Z",
-        "updated_at": "2022-10-13T12:58:46.362Z",
+        "created_at": "2022-10-16T14:00:22.367Z",
+        "updated_at": "2022-10-16T14:00:22.367Z",
+        "user": 2,
         "categories": [
-            1
+            1,
+            2
         ]
     }
 },
 {
-    "model": "todo.task",
-    "pk": 6,
+    "model": "todo.grouptask",
+    "pk": 1,
     "fields": {
-        "user": 4,
-        "name": "Attend the business meeting",
+        "name": "Prepare the marketing campaign",
         "description": "",
         "is_completed": false,
-        "created_at": "2022-10-13T12:59:08.819Z",
-        "updated_at": "2022-10-13T12:59:08.819Z",
+        "created_at": "2022-10-16T13:57:16.496Z",
+        "updated_at": "2022-10-16T13:57:16.496Z",
+        "categories": [
+            4
+        ],
+        "users": [
+            3,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "todo.grouptask",
+    "pk": 2,
+    "fields": {
+        "name": "Implement the new website design",
+        "description": "",
+        "is_completed": true,
+        "created_at": "2022-10-16T13:57:48.281Z",
+        "updated_at": "2022-10-16T13:57:48.281Z",
+        "categories": [
+            2
+        ],
+        "users": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "todo.grouptask",
+    "pk": 3,
+    "fields": {
+        "name": "Clean up the backend code",
+        "description": "",
+        "is_completed": false,
+        "created_at": "2022-10-16T13:58:56.917Z",
+        "updated_at": "2022-10-16T13:58:56.917Z",
         "categories": [
             1
+        ],
+        "users": [
+            2,
+            4
         ]
     }
 }
