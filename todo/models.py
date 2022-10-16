@@ -1,6 +1,8 @@
 from django.contrib.auth.models import User
 from django.db import models
 
+from core.settings import AUTH_USER_MODEL
+
 
 class TaskCategory(models.Model):
     name = models.CharField(max_length=128)
@@ -26,14 +28,19 @@ class GenericTask(models.Model):
 
 
 class UserTask(GenericTask):
-    user = models.ForeignKey(to=User, on_delete=models.CASCADE)
+    user = models.ForeignKey(
+        to=AUTH_USER_MODEL,
+        on_delete=models.CASCADE
+    )
 
     def __str__(self):
         return f'UserTask {self.id}'
 
 
 class GroupTask(GenericTask):
-    users = models.ManyToManyField(to=User)
+    users = models.ManyToManyField(
+        to=AUTH_USER_MODEL
+    )
 
     def __str__(self):
         return f'GroupTask {self.id}'
