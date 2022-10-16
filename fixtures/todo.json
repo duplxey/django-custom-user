@@ -52,7 +52,7 @@
     "fields": {
         "name": "Fix the /users/ API endpoint",
         "description": "",
-        "is_completed": false,
+        "is_completed": true,
         "created_at": "2022-10-16T13:58:22.054Z",
         "updated_at": "2022-10-16T13:58:22.054Z",
         "user": 2,
@@ -97,7 +97,7 @@
     "fields": {
         "name": "Connect Stripe to the backend",
         "description": "",
-        "is_completed": false,
+        "is_completed": true,
         "created_at": "2022-10-16T13:59:51.381Z",
         "updated_at": "2022-10-16T13:59:51.381Z",
         "user": 2,
@@ -127,7 +127,7 @@
     "fields": {
         "name": "Connect the frontend service with the backend service",
         "description": "",
-        "is_completed": false,
+        "is_completed": true,
         "created_at": "2022-10-16T14:00:22.367Z",
         "updated_at": "2022-10-16T14:00:22.367Z",
         "user": 2,
