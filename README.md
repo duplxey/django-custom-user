@@ -7,7 +7,7 @@ The repository is split into two branches:
 1. `base` - starting point (using Django's default user model)
 2. `master` - end point (using custom user model)
 
-To learn how it's done check out the [article](#).
+To learn how it's done check out the [article](https://testdriven.io/blog/django-custom-user-model-migration/).
 
 ## Want to use this project?
 
